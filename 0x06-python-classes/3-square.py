@@ -14,7 +14,7 @@ class Square:
 
     def __init__(self, size=0):
 
-        '''Initializing the object'''
+        '''Initializing the object and giving size a default value = 0'''
 
         '''
         raise:
@@ -33,4 +33,4 @@ class Square:
             This is a method that takes the argument self
             and generate the area of a square
             '''
-            return (self.__size * self.__size)
+            return self.__size * self.__size
