@@ -16,4 +16,4 @@ class Square:
 
         """Initializes a Square object."""
 
-        self.size = size
+        self.__size = size
