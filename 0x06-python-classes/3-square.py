@@ -30,4 +30,8 @@ class Square:
 
         def area(self):
             '''This is a method that takes the argument self'''
-            return self.size * self.size
+            return self.__size * self.__size
+
+square1 = Square(5)
+area = square1.area()
+print(f"The area of the square is: {area:.2f}")
