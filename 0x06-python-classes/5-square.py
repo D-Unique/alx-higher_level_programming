@@ -50,8 +50,8 @@ class Square:
             else:
                 return #
         '''
-        for (i=self.__size, i=0, --1):
-            if self.__size == 0:
-                return ""
-            else:
+        if self.__size = 0:
+            return ""
+        else:
+            for (i=self.__size, i=0, --1):
                 return self.__size * "#"
