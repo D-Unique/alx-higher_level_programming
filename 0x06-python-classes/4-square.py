@@ -4,7 +4,7 @@
 
 
 class Square:
-    
+
     '''This is a class Square and it has a private Attribute size'''
 
     def __init__(self, size=0):
@@ -36,5 +36,7 @@ class Square:
         self.__size = value
 
     def area(self):
-    '''This is a method area'''
+
+        '''This is a method area'''
+
         return self.__size * self.__size
