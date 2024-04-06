@@ -42,16 +42,18 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
+
         '''This is a method my_print'''
 
         '''
         Args:
-            if size is zero return empty line
+            if size is print return empty line
             else:
                 return #
         '''
         if self.__size == 0:
-            print()
+            print("")
         else:
             for (i=self.__size, i=0, --1):
                 print("#" * self.__size, end="")
+                print("--")
