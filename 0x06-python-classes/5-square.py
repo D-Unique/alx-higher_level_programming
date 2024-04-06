@@ -1,40 +1,57 @@
 #!/usr/bin/python3
 
-"""Define a class Square."""
+''' This file contains the class Square with it Attribute size'''
 
 
 class Square:
-    """Represent a square."""
 
-    def __init__(self, size):
-        """Initialize a new square.
+    '''This is a class Square and it has a private Attribute size'''
 
-        Args:
-            size (int): The size of the new square.
-        """
-        self.size = size
+    def __init__(self, size=0):
+        '''inintialing an object with a defult size value of zero'''
+
+        self.__size = size
 
     @property
     def size(self):
-        """Get/set the current size of the square."""
-        return (self.__size)
+        '''This is a method that gets the value of the private attribute'''
+        return self.__size
 
     @size.setter
     def size(self, value):
+
+        '''This is a method that set the private attribute size'''
+
+        '''
+        Args:
+            raise:
+                typeError: size must be an integer
+                valueError: size must be greater than zero
+        '''
+
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
+        elif (value <= 0):
+            raise ValueError("size must be greater than zero")
         self.__size = value
 
     def area(self):
-        """Return the current area of the square."""
-        return (self.__size * self.__size)
+
+        '''This is a method area'''
+
+        return self.__size * self.__size
 
     def my_print(self):
-        """Print the square with the # character."""
-        for i in range(0, self.__size):
-            [print("#", end="") for j in range(self.__size)]
-            print("")
-        if self.__size == 0:
-            print("")
+        '''This is a method my_print'''
+
+        '''
+        Args:
+            if size is zero return empty line
+            else:
+                return #
+        '''
+        for (i=self.__size, i=0, --1):
+            if self.__size == 0:
+                return ""
+            else:
+                return self.__size * "#"
