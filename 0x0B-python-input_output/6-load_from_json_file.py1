@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+'''
+this file contain a function that returns a
+python object from a Json file
+'''
+import json
+
+
+def load_from_json_file(filename):
+    '''this method collects the json file'''
+
+    with open(filename, "r") as f:
+        '''opens the json file in a read format as f'''
+        data = json.load(f)
+        '''loads the json file convarting it to object stored in data'''
+    return data
