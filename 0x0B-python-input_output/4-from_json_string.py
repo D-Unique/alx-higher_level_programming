@@ -2,11 +2,10 @@
 '''contains a function that returns a JSON string
 from a python object'''
 
-import JSON
+import json
 
 
 def from_json_string(my_str):
     '''this method take in a python object'''
-
     data = json.loads(my_str)
     return data
