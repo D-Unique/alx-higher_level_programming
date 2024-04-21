@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 '''
 This is a scipt that load object from a json file
 and then collect arg from cmd and store in a file
