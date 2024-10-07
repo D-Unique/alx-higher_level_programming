@@ -1,2 +1,5 @@
 #!/usr/bin/node
-console.log(`${process.argv[2]} is ${process.argv[3]}`);
+
+const cmd = process.argv;
+
+console.log('%s is %s', cmd[2], cmd[3]);
