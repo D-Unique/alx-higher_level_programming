@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Author - Bamidele Adefolaju
 
 for i in range(0, 9):
     for j in range(i, 10):
