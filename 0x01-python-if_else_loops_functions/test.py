@@ -1,7 +1,8 @@
 #!usr/bin/python3 
-
-
-def print_last_digit(number):
-    string = str(number)
-    last = string[-1]
-    print(last)
+def magic_calculation(a, b, c):
+       if a < b:
+             return c
+       if c > b:
+               return a + b
+       return (a*b)-c
+               
